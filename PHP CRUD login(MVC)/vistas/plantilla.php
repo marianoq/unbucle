@@ -37,16 +37,9 @@ session_start();
 <body>
 
 	<!-- NAVBAR -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="nav navbar-dark bg-dark">
 		<div class="container">
-			<a class="navbar-brand" href="index.php">
-				<img src="vistas/img/logo.jpg" alt="UnBucle" style="width: 30%;">
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav justify-content-end nav-pills">
+				<ul class="nav nav-justified py-2 nav-pills">
 					<?php if (isset($_GET["pagina"])): ?>
 
 						<?php if ($_GET["pagina"] == "registro"): ?>
@@ -106,7 +99,6 @@ session_start();
 						</li>
 					<?php endif ?>
 				</ul>	
-			</div>
 		</div>
 	</nav>
 
